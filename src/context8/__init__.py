@@ -1,2 +1,7 @@
+from rich.console import Console
+
+
 def main() -> None:
-    print("Hello from context8!")
+    """Run the project entrypoint."""
+    console = Console()
+    console.print("Hello from context8!")

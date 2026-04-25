@@ -18,6 +18,9 @@ addopts = [
 ]
 xfail_strict = true
 markers = [
-    "slow: long-running tests excluded by default"
+    "slow: long-running tests excluded by default",
+    "unit: fast, isolated tests that do not require external services",
+    "contract: happy-path schema contract tests for Pydantic models",
+    "validation: negative-path validation tests for Pydantic models"
 ]
 filterwarnings = ["error"]
